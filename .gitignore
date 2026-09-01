@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Secrets / local configuration
+.env
+.env.*
+browser_login_state/
+wps_login_state/
+*.cookie
+*.cookies
+
+# Real input/output data must never be committed
+input/*
+!input/.gitkeep
+output/*
+!output/.gitkeep
+
+# Office temp files
+~$*
+*.xls
+
+# Keep only the synthetic .xlsx files under sample_data/
+*.xlsx
+!sample_data/*.xlsx
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
